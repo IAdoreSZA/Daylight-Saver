@@ -1,0 +1,30 @@
+# DaylightSaver configuration
+#
+# Lengths are in real-world minutes (decimals are fine, e.g. 12.5).
+# Vanilla Minecraft: day = 10 minutes, night = 10 minutes (20 minute full cycle).
+#
+# "Day" is from sunrise to sunset (time 0 -> 12000) and
+# "night" is from sunset to sunrise (time 12000 -> 24000).
+#
+# Only the sun/moon clock is affected. Crops, mobs, redstone, furnaces, etc.
+# all keep running at normal speed. Sleeping and /time set still work.
+#
+# After editing, run /daylightsaver reload.
+
+# Default lengths for every overworld-type world.
+day-length: 20.0
+night-length: 20.0
+
+# Per-world overrides. Anything left out falls back to the defaults above.
+worlds: {}
+#  world:
+#    day-length: 30.0
+#    night-length: 10.0
+#  creative_world:
+#    day-length: 10.0
+#    night-length: 10.0
+
+# Worlds the plugin should not touch at all.
+# (The Nether and the End are always skipped since they have no day cycle.)
+disabled-worlds: []
+#  - minigames

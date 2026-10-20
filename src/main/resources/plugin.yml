@@ -1,0 +1,18 @@
+name: DaylightSaver
+version: '${project.version}'
+main: io.github.iadoresza.daylightsaver.DaylightSaver
+api-version: '26.3'
+description: ${project.description}
+author: IAdoreSZA
+
+commands:
+  daylightsaver:
+    description: Reload the config or show the current day/night speeds.
+    usage: /<command> <reload|status>
+    aliases: [dls]
+    permission: daylightsaver.admin
+
+permissions:
+  daylightsaver.admin:
+    description: Use /daylightsaver.
+    default: op
